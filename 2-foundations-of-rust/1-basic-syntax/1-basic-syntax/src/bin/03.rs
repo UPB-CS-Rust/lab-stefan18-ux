@@ -12,5 +12,5 @@ fn main() {
     }
     // TODO
 
-    println!("{} is largest and {} is smallest", max, min);
+    println!("{} is largest and {} is smallest", input.iter().max().unwrap(), input.iter().min().unwrap());
 }

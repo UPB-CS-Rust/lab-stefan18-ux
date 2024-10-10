@@ -7,12 +7,7 @@ fn main() {
 }
 
 fn bigger(a: i32, b: i32) -> bool {
-    if a > b {
-        return true;
-    }
-    else {
-        return false;
-    }
+    a < b
 }
 
 #[cfg(test)]
