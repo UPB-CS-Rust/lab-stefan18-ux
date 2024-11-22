@@ -42,8 +42,8 @@ fn count_bytes_and_lines(filename: &str) -> Result<(usize, usize, usize), io::Er
 
 fn main() -> Result<(), io::Error> {
     let args: Vec<String> = env::args().collect();
-    let filename = &args[1];
-
+    let filename;
+    filename = &args[2];
     let (lines, words, bytes) = count_bytes_and_lines(filename)?;
     println!("{filename}: {lines} lines, {words} words, {bytes} bytes");
     Ok(())
